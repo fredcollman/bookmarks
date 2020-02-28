@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+if [ $# -gt 0 ]; then
+    hub browse -u "Yobota/$1"
+else
+    echo "https://github.com/Yobota"
+fi
