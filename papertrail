@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+if [ $# -gt 0 ]; then
+    echo "https://papertrailapp.com/systems/$1/events"
+else
+    echo "https://papertrailapp.com/dashboard"
+fi

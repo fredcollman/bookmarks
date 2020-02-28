@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+if [ -z "$JIRA_URL" ]; then
+	echo "Must set JIRA_URL"
+	exit 1
+fi
+
+echo "$JIRA_URL/browse/$1"

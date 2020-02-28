@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+echo "https://dashboard.heroku.com/apps/$1"
