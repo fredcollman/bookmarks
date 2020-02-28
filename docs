@@ -1,0 +1,64 @@
+#!/usr/bin/env sh
+case $1 in
+	drf)
+		echo "https://www.django-rest-framework.org/"
+		;;
+	dj|django)
+		echo "https://docs.djangoproject.com/en/2.2/"
+		;;
+	sentry)
+		echo "https://docs.sentry.io/"
+		;;
+	configurations|conf)
+		echo "https://django-configurations.readthedocs.io/en/stable/values/#built-ins"
+		;;
+	flow)
+		echo "https://flow.org/en/docs/types/"
+		;;
+	react)
+		echo "https://reactjs.org/docs/forms.html"
+		;;
+	hooks)
+		echo "https://reactjs.org/docs/hooks-reference.html#basic-hooks"
+		;;
+	cra|create-react-app)
+		echo "https://facebook.github.io/create-react-app/docs/getting-started"
+		;;
+	j|jenkins)
+		echo "https://jenkins.io/doc/book/pipeline/syntax/"
+		;;
+	h|heroku)
+		echo "https://devcenter.heroku.com/articles/buildpack-api"
+		;;
+	cy|cyp|cypress)
+		echo "https://docs.cypress.io/api/api/table-of-contents.html"
+		;;
+	p|py|python)
+		echo "https://docs.python.org/3/library/exceptions.html#exception-hierarchy"
+		;;
+	mdn|js)
+		echo "https://developer.mozilla.org/en-US/"
+		;;
+	storybook)
+		echo "https://storybook.js.org/docs/guides/guide-react/"
+		;;
+	react-router|router|rr)
+		echo "https://reacttraining.com/react-router/web/api/Route"
+		;;
+	compose|docker-compose|dc)
+		echo "https://docs.docker.com/compose/compose-file/"
+		;;
+	d|docker)
+		echo "https://docs.docker.com/engine/reference/commandline/docker/"
+		;;
+	flex|flexbox)
+		echo "https://css-tricks.com/snippets/css/a-guide-to-flexbox/#maincontent"
+		;;
+	grid)
+		echo "https://css-tricks.com/snippets/css/complete-guide-grid/#grid-table-of-contents"
+		echo "https://gridbyexample.com/examples/"
+		;;
+  ramda)
+    echo "https://ramdajs.com/docs/"
+    ;;
+esac
