@@ -1,0 +1,33 @@
+#!/usr/bin/env sh
+case $1 in
+	drf)
+		echo "https://github.com/encode/django-rest-framework"
+		;;
+	dj|django)
+		echo "https://github.com/django/django"
+		;;
+	swag|swagger)
+		echo "https://github.com/swagger-api/swagger-ui"
+		;;
+	sentry)
+		echo "https://github.com/getsentry/sentry-python/"
+		;;
+	jwt|simplejwt)
+		echo "https://github.com/davesque/django-rest-framework-simplejwt"
+		;;
+	configurations|conf)
+		echo "https://github.com/jazzband/django-configurations"
+		;;
+	cra|create-react-app)
+		echo "https://github.com/facebook/create-react-app"
+		;;
+	cy|cyp|cypress)
+		echo "https://github.com/cypress-io/cypress"
+		;;
+	storybook)
+		echo "https://github.com/storybookjs/storybook"
+		;;
+	react-router|router|rr)
+		echo "https://github.com/ReactTraining/react-router"
+		;;
+esac

@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+echo "https://docs.python.org/3/library/${1}.html"
