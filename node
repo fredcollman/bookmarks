@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+echo "https://nodejs.org/docs/latest/api/${1}.html"
