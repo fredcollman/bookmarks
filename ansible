@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+ROOT = "https://docs.ansible.com/ansible/latest"
+
+def resolve(qualname: str):
+    items = qualname.split(".")
+    if len(items) == 3:
+        namespace, collection, module = items
+        return f"{ROOT}/collections/{namespace}/{collection}/{module}_module.html#examples"
+    if len(items) == 2:
+        namespace, collection = items
+        return f"{ROOT}/collections/{namespace}/{collection}/index.html#modules"
+    if len(items) == 1:
+        namespace,  = items
+        return f"{ROOT}/collections/{namespace}/index.html"
+    return items
+
+
+if __name__ == "__main__":
+    import sys
+    print(resolve(sys.argv[1]))
