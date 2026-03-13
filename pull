@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 if [ $# -gt 1 ]; then
-    hub browse -u "Yobota/$1" "pull/$2"
+    hub browse -u "fredcollman/$1" "pull/$2"
 else
-    hub browse -u "Yobota/$1" "pulls"
+    hub browse -u "fredcollman/$1" "pulls"
 fi
 

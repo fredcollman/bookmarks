@@ -1,0 +1,42 @@
+#!/usr/bin/env python
+import re
+import os
+
+WS = os.environ["LINEAR_WORKSPACE"]
+TEAM = os.environ["LINEAR_TEAM"]
+
+
+def url(*fragments):
+    return f"https://linear.app/{WS}" + "/".join(fragments)
+
+
+def search(terms: list[str]):
+    joined = "+".join(terms)
+    return f"https://linear.app/{WS}/search?q={joined}"
+
+
+def details(item: str):
+    if re.match(r"^[0-9]+$", item):
+        return f"https://linear.app/{WS}/issue/{TEAM}-{item}"
+    elif re.match(r"^[a-z]+-[0-9]+$", item, re.IGNORECASE):
+        return f"https://linear.app/{WS}/issue/{item}"
+    return search([item])
+
+
+def format_query(terms: list[str]):
+    match terms:
+        case []:
+            return f"https://linear.app/{WS}/team/{TEAM}/active"
+        case ["bl"] | ["backlog"]:
+            return f"https://linear.app/{WS}/team/{TEAM}/backlog"
+        case [item]:
+            return details(item)
+        case _:
+            return search(terms)
+
+
+if __name__ == "__main__":
+    import sys
+
+    query_terms = sys.argv[1:]
+    print(format_query(query_terms))
