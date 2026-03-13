@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+if [ $# -eq 0 ]; then
+  echo "https://letterboxd.com/activity/"
+else
+  echo "https://letterboxd.com/search/${1}/?adult"
+fi

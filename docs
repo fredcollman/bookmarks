@@ -61,4 +61,16 @@ case $1 in
   ramda)
     echo "https://ramdajs.com/docs/"
     ;;
+  effect)
+    echo "https://effect.website/docs/"
+    ;;
+  schema)
+    echo "https://effect.website/docs/schema/introduction/"
+    ;;
+  pnpm)
+    echo "https://pnpm.io/settings"
+    ;;
+  sqlite)
+    echo "https://www.sqlite.org/lang.html"
+    ;;
 esac

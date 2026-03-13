@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+if [ $# -eq 0 ]; then
+  echo "https://www.youtube.com/feed/subscriptions"
+else
+  echo "https://www.youtube.com/results?search_query=${1}"
+fi

@@ -30,4 +30,28 @@ case $1 in
 	react-router|router|rr)
 		echo "https://github.com/ReactTraining/react-router"
 		;;
+  effect|eff)
+    echo "https://github.com/Effect-TS/effect/tree/main/packages/effect/src"
+    ;;
+  smol|effect4|eff4)
+    echo "https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src"
+    ;;
+  sv|svelte)
+    echo "https://github.com/sveltejs/svelte/tree/main/packages/svelte/src"
+    ;;
+  sveltekit|svelte-kit|kit|sk)
+    echo "https://github.com/sveltejs/kit/packages/kit/src"
+    ;;
+  wa|webawesome)
+    echo "https://github.com/shoelace-style/webawesome/tree/next/packages/webawesome/src/components"
+    ;;
+  sl|shoelace)
+    echo "https://github.com/shoelace-style/shoelace/tree/next/src/components"
+    ;;
+  bits|bits-ui)
+    echo "https://github.com/huntabyte/bits-ui/tree/main/packages/bits-ui/src/lib/bits"
+    ;;
+  in|internotes)
+    echo "https://github.com/internotes-app/internotes"
+    ;;
 esac

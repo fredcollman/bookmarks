@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+if [ $# -eq 0 ]; then
+  echo "https://tidal.com/my-collection/playlists"
+else
+  echo "https://tidal.com/search?q=${1}"
+fi
