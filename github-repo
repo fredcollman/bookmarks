@@ -1,6 +1,11 @@
 #!/usr/bin/env sh
+# ~/dev/new-machine/zshrc/local-overrides
+if [ -z "${GITHUB_ORG}" ]; then
+  GITHUB_ORG=fredcollman
+fi
+
 if [ $# -gt 0 ]; then
-    gh browse -u "fredcollman/$1"
+    echo "https://github.com/$GITHUB_ORG/$1"
 else
-    echo "https://github.com/fredcollman"
+    echo "https://github.com/$GITHUB_ORG"
 fi

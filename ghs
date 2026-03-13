@@ -1,11 +1,13 @@
 #!/usr/bin/env python
+import os
+
+# ~/dev/new-machine/zshrc/local-overrides
+ORG = os.environ.get("GITHUB_ORG", "fredcollman")
 
 
 def format_query(query_terms):
-    joined = "+".join(query_terms)
-    return "https://github.com/search?q={}+org%3Ainternotes-app&type=Code".format(
-        joined
-    )
+    joined = "+".join([f"org%3A{ORG}", *query_terms])
+    return f"https://github.com/search?q={joined}&type=Code"
 
 
 if __name__ == "__main__":

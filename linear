@@ -2,6 +2,7 @@
 import re
 import os
 
+# ~/dev/new-machine/zshrc/local-overrides
 WS = os.environ["LINEAR_WORKSPACE"]
 TEAM = os.environ["LINEAR_TEAM"]
 

@@ -1,7 +1,15 @@
 #!/usr/bin/env sh
+
+# ~/dev/new-machine/zshrc/local-overrides
+if [ -z "${GITHUB_ORG}" ]; then
+  GITHUB_ORG=fredcollman
+fi
+
+REPO=$1
+
 if [ $# -gt 1 ]; then
-    gh browse -u "fredcollman/$1" "pull/$2"
+    echo "https://github.com/${GITHUB_ORG}/${REPO}/pull/${2}"
 else
-    gh browse -u "fredcollman/$1" "pulls"
+    echo "https://github.com/${GITHUB_ORG}/${REPO}/pulls"
 fi
 
