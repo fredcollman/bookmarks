@@ -73,4 +73,23 @@ case $1 in
   sqlite)
     echo "https://www.sqlite.org/lang.html"
     ;;
+  sv|svelte)
+    echo "https://svelte.dev/docs/svelte/svelte"
+    ;;
+  sveltekit|svelte-kit|kit|sk)
+    echo "https://svelte.dev/docs/kit/@sveltejs-kit"
+    ;;
+  wa|webawesome)
+    echo "https://webawesome.com/docs/components"
+    ;;
+  bits|bits-ui)
+    case $2 in
+      '')
+        echo "https://bits-ui.com/docs/introduction"
+        ;;
+      *)
+        echo "https://bits-ui.com/docs/components/$2"
+        ;;
+    esac
+    ;;
 esac
